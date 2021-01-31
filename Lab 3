@@ -1,0 +1,138 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Hometasks 
+  {  
+    class Lab_3
+  {       
+static void Main(string[] args)    
+{           
+//select exercise       
+}
+
+
+public static void Ex 1()
+{
+char key;
+Console.Write("Press a number key:");
+key = (char)Console.Read();
+switch (key)
+{
+case '0': Console.WriteLine("You pressed 0"); break;
+case '1': Console.WriteLine("You pressed 1"); break;
+case '2': Console.WriteLine("You pressed 2"); break;
+case '3': Console.WriteLine("You pressed 3"); break;
+case '4': Console.WriteLine("You pressed 4"); break;
+case '5': Console.WriteLine("You pressed 5"); break;
+case '6': Console.WriteLine("You pressed 6"); break;
+case '7': Console.WriteLine("You pressed 7"); break;
+case '8': Console.WriteLine("You pressed 8"); break;
+case '9': Console.WriteLine("You pressed 9"); break;
+default: Console.WriteLine("Not allowed!"); break;
+}
+
+
+public static void Ex2 () 
+{
+double a, b;
+            char operand;
+            double c;
+            Console.WriteLine("Please enter the first number");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please enter an operand");
+            operand = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("Please enter the second number");
+            b = Convert.ToDouble(Console.ReadLine());
+            switch (operand)
+            {
+                case '+':
+                    c = a + b;
+                    break;
+                case '-':
+                    c = a - b;
+                    break;
+                case '*':
+                    c = a * b;
+                    break;
+                case '/':
+                    c = a / b;
+                    break;
+                default:
+                    c = 0;
+                    break;
+            }
+            Console.WriteLine(a.ToString() + ' ' + operand + ' ' + b.ToString() + " = " + c.ToString());
+        }
+        
+        
+            public static void Ex 3 () 
+{
+            Console.WriteLine("Enter number");
+            var a = Convert.ToInt32(Console.ReadLine());
+
+            if (a > 0)
+            {
+                Console.WriteLine("num is pos");
+            }
+            else if (a < 0)
+            {
+                Console.WriteLine("num is neg");
+            }
+            else
+            {
+                Console.WriteLine("num is 0");
+            }
+        }
+
+
+
+
+        public static void Ex4()
+        {
+            Console.WriteLine("Enter number");
+            var a = Convert.ToInt32(Console.ReadLine());
+
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("num is even");
+            }
+            else
+            {
+                Console.WriteLine("num is odd");
+            }
+        }
+
+
+
+
+
+        public static void Ex5()
+        {
+            Console.WriteLine("Enter char");
+            var ch = Console.ReadLine();
+
+            if (ch.Length > 1)
+            {
+                Console.WriteLine("It's a sentence");
+            }
+            else
+            {
+                Console.WriteLine("It's a char");
+            }
+
+        }
+
+
+
+
+        public static void Ex6()
+        {
+            Console.WriteLine("enter the month num");
+            var a = Convert.ToInt32(Console.ReadLine());
+            if (a > 0 && a <= 12)
+            {
+                Console.WriteLine(DateTime.DaysInMonth(DateTime.Now.Year, a));
+            }
+        }
+     }
