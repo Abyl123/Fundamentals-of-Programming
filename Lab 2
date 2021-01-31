@@ -1,0 +1,95 @@
+using System;
+
+namespace Hometasks
+{
+    class lab_2
+    {
+        static void Main(string[] args)
+        {
+            // select exercise
+        }
+private void Ex1 ()
+        {
+            int a;
+            Console.WriteLine("Enter the number");
+            a = Convert.ToInt32(Console.ReadLine());
+            if (a > 0)
+            {
+                Console.WriteLine(a % 3 == 0 || a % 7 == 0);
+            }
+        }
+
+
+private void Ex2 () 
+        {
+            int Num1, Num2;
+            Console.WriteLine("Enter 1st number");
+            Num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 2nd number");
+            Num2 = Convert.ToInt32(Console.ReadLine());
+            if (Num1 >= -10 && Num1 <=10 || Num2 >= -10 && Num2 <= 10)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+        }
+private void Ex3 () 
+        {
+            int a, b;
+            Console.WriteLine("Enter 1st number");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 2nd number");
+            b = Convert.ToInt32(Console.ReadLine());
+            if(a < 100 && b > 200 || a > 200 && b < 100)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+        }
+private void Ex4 () 
+        {
+            int R;
+            Console.WriteLine("Enter the radius of a circle");
+            R = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Perimeter = ");
+            Console.WriteLine("{0} * 3.14 = {1}", R, R * 3.14);
+            Console.Write("Area = ");
+            Console.WriteLine("{0} * {0} * 3.14 = {1}", R, R * R * 3.14);
+        }
+private void Ex 5() 
+        {
+            double k, m, t;
+            Console.WriteLine("enter the distance in kilometres");
+            k = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the time");
+            t = Convert.ToInt32(Console.ReadLine());
+            double kph, mph;
+            m = k * 0.6214;
+            kph = k / t;
+            mph = m / t;
+            Console.Write("kph = ");
+            Console.WriteLine("{0} / {1} = {2}", k, t, kph);
+            Console.Write("mph = ");
+            Console.WriteLine("{0} / {1} = {2}", m, t, mph);
+        }
+private void Ex 6()
+        {
+            double R;
+            Console.WriteLine("enter the radius of the sphere");
+            R = Convert.ToInt32(Console.ReadLine());
+            double Sur, Vol;
+            Sur = 4 * 3.14 * R * R;
+            Console.Write("Surface = ");
+            Console.WriteLine("4 * 3.14 * {0} * {0} = {1}", R, Sur);
+            Vol = 4 * 3.14 * R * R * R / 3;
+            Console.Write("Volume = ");
+            Console.WriteLine("4 * 3.14 * {0} * {0} * {0} / 3 = {1}", R, Vol);
+        } 
+    }
+}
